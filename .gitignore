@@ -11,8 +11,6 @@ AppData/
 Chrome/
 npm/
 
-# Streamlit
-.streamlit/
 
 # Logs
 *.log
