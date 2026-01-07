@@ -37,8 +37,16 @@ def calculate_flat_emi(principal, rate_pa, tenure_months):
     return total_amount / tenure_months
 
 # --- MAIN APP ---
-st.markdown('<div class="main-header">☀️ Advanced Solar Economics Calculator</div>', unsafe_allow_html=True)
-st.markdown("---")
+col1, col2 = st.columns([8 , 1])
+
+with col1:
+    st.markdown("## ☀️ Advanced Solar Economics Calculator")
+with col2:
+    st.image("DWlogo.png",use_container_width=True)
+
+
+
+st.divider()
 
 # ==========================================
 # SECTION 1: INVESTMENT CALCULATOR
