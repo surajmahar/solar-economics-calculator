@@ -5,7 +5,26 @@ import numpy_financial as npf
 import plotly.graph_objects as go
 import plotly.express as px
 from datetime import date
+import streamlit as st
 
+# Configuration for embedding
+st.set_page_config(
+    page_title="Solar Calculator",
+    layout="wide",
+    initial_sidebar_state="expanded"
+)
+
+# Hide Streamlit branding and make it embeddable
+hide_streamlit_style = """
+<style>
+    #MainMenu {visibility: hidden;}
+    footer {visibility: hidden;}
+    header {visibility: hidden;}
+    .stDeployButton {display:none;}
+    iframe {border: none;}
+</style>
+"""
+st.markdown(hide_streamlit_style, unsafe_allow_html=True)
 # --- CONFIGURATION & STYLING ---
 st.set_page_config(page_title="Advanced Solar Economics Calculator", layout="wide")
 
